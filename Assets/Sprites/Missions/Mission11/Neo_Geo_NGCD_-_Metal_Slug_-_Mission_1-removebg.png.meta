@@ -152,7 +152,7 @@ TextureImporter:
         width: 1043
         height: 375
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -231,9 +231,9 @@ TextureImporter:
       name: Neo_Geo_NGCD_-_Metal_Slug_-_Mission_1-removebg_5
       rect:
         serializedVersion: 2
-        x: 1278
-        y: 1740
-        width: 315
+        x: 1303
+        y: 1743
+        width: 290
         height: 250
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -946,12 +946,12 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1293
+        y: 1290
         width: 4153
         height: 311
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 303, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 6, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1307,7 +1307,7 @@ TextureImporter:
         width: 1196
         height: 212
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1315,6 +1315,27 @@ TextureImporter:
       bones: []
       spriteID: ce4206a911d8d054d9b067f5de66caec
       internalID: -516742971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo_Geo_NGCD_-_Metal_Slug_-_Mission_1-removebg_57
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2201
+        width: 323
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9a971bff3fdd2a4692f2c4dbece912f
+      internalID: -2033578760
       vertices: []
       indices: 
       edges: []
@@ -1383,6 +1404,7 @@ TextureImporter:
       Neo_Geo_NGCD_-_Metal_Slug_-_Mission_1-removebg_54: 8327636
       Neo_Geo_NGCD_-_Metal_Slug_-_Mission_1-removebg_55: 1615610933
       Neo_Geo_NGCD_-_Metal_Slug_-_Mission_1-removebg_56: -1933071257
+      Neo_Geo_NGCD_-_Metal_Slug_-_Mission_1-removebg_57: -2033578760
       Neo_Geo_NGCD_-_Metal_Slug_-_Mission_1-removebg_6: -759518062
       Neo_Geo_NGCD_-_Metal_Slug_-_Mission_1-removebg_7: -1590632811
       Neo_Geo_NGCD_-_Metal_Slug_-_Mission_1-removebg_8: -2063364492
