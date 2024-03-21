@@ -1,0 +1,580 @@
+fileFormatVersion: 2
+guid: bec67ea4000bee84082a33a729f8936f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Neo_Geo_NGCD_-_Metal_Slug_-_Mission_5-removebg_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 949
+        width: 4304
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 5, z: 0, w: 221}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80c2bb9f74ee6ec4c89c45f841d9dfa6
+      internalID: -235011529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo_Geo_NGCD_-_Metal_Slug_-_Mission_5-removebg_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 811
+        width: 198
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f45de07c2bf4c640b096ba7711ed26e
+      internalID: 54462993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo_Geo_NGCD_-_Metal_Slug_-_Mission_5-removebg_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 329
+        width: 247
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4813106b68cf2654bb911e4b6a442da9
+      internalID: -347979173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo_Geo_NGCD_-_Metal_Slug_-_Mission_5-removebg_3
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 336
+        width: 235
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77c80ca041c74db44b1e027d4e93583c
+      internalID: 1315567263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo_Geo_NGCD_-_Metal_Slug_-_Mission_5-removebg_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 116
+        width: 261
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e94bf26d0ca85e4c9777702e38ee739
+      internalID: 613771157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo_Geo_NGCD_-_Metal_Slug_-_Mission_5-removebg_5
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 122
+        width: 238
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 291575caa551a9c438c70cb880976765
+      internalID: 943026655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo_Geo_NGCD_-_Metal_Slug_-_Mission_5-removebg_6
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 104
+        width: 238
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04952b638deef0a46a77ed3ed5dbb77a
+      internalID: -1618535973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo_Geo_NGCD_-_Metal_Slug_-_Mission_5-removebg_7
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 301
+        width: 250
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d30e0b05b077f374fa8d0dce8a22f53f
+      internalID: 1569232425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo_Geo_NGCD_-_Metal_Slug_-_Mission_5-removebg_8
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 391
+        width: 252
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93bbf633df90fae4f824948c8f9f800c
+      internalID: -2128947789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo_Geo_NGCD_-_Metal_Slug_-_Mission_5-removebg_9
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 183
+        width: 232
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f53368385b4273f4793dd388809f719f
+      internalID: 1935438957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo_Geo_NGCD_-_Metal_Slug_-_Mission_5-removebg_10
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 307
+        width: 223
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b69c713e888cb254fb18bd9612cf33a6
+      internalID: -45018603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo_Geo_NGCD_-_Metal_Slug_-_Mission_5-removebg_11
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 112
+        width: 237
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 727930c03d8a3034982350697d3391e1
+      internalID: -880934566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo_Geo_NGCD_-_Metal_Slug_-_Mission_5-removebg_12
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 438
+        width: 357
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79804afc91a3830458f2b1f2c4cdea25
+      internalID: 1821857039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo_Geo_NGCD_-_Metal_Slug_-_Mission_5-removebg_13
+      rect:
+        serializedVersion: 2
+        x: 1915
+        y: 816
+        width: 111
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5bf73930ce471949ba0eb7b480efeba
+      internalID: -744023694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo_Geo_NGCD_-_Metal_Slug_-_Mission_5-removebg_14
+      rect:
+        serializedVersion: 2
+        x: 2031
+        y: 816
+        width: 98
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 890ebebe3ddf3ee4894821c02d206b8e
+      internalID: -995724967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo_Geo_NGCD_-_Metal_Slug_-_Mission_5-removebg_15
+      rect:
+        serializedVersion: 2
+        x: 1931
+        y: 646
+        width: 99
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e2b5c6f90877d43828abdd806de454
+      internalID: -1424217793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo_Geo_NGCD_-_Metal_Slug_-_Mission_5-removebg_16
+      rect:
+        serializedVersion: 2
+        x: 2034
+        y: 644
+        width: 106
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e36bbbcbd875ead4e90a0725ab86360f
+      internalID: -1008340793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo_Geo_NGCD_-_Metal_Slug_-_Mission_5-removebg_17
+      rect:
+        serializedVersion: 2
+        x: 1931
+        y: 515
+        width: 100
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d82e288e81f58e4cb2e3d4b3bc60a52
+      internalID: -1636588805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo_Geo_NGCD_-_Metal_Slug_-_Mission_5-removebg_18
+      rect:
+        serializedVersion: 2
+        x: 2036
+        y: 515
+        width: 104
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc50c573cc5c00246bff6129ce7e5e71
+      internalID: 547458951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neo_Geo_NGCD_-_Metal_Slug_-_Mission_5-removebg_19
+      rect:
+        serializedVersion: 2
+        x: 1954
+        y: 450
+        width: 193
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c76ba0410ec863e4696aa9ec9ce93803
+      internalID: 1290114539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Neo_Geo_NGCD_-_Metal_Slug_-_Mission_5-removebg_0: -235011529
+      Neo_Geo_NGCD_-_Metal_Slug_-_Mission_5-removebg_1: 54462993
+      Neo_Geo_NGCD_-_Metal_Slug_-_Mission_5-removebg_10: -45018603
+      Neo_Geo_NGCD_-_Metal_Slug_-_Mission_5-removebg_11: -880934566
+      Neo_Geo_NGCD_-_Metal_Slug_-_Mission_5-removebg_12: 1821857039
+      Neo_Geo_NGCD_-_Metal_Slug_-_Mission_5-removebg_13: -744023694
+      Neo_Geo_NGCD_-_Metal_Slug_-_Mission_5-removebg_14: -995724967
+      Neo_Geo_NGCD_-_Metal_Slug_-_Mission_5-removebg_15: -1424217793
+      Neo_Geo_NGCD_-_Metal_Slug_-_Mission_5-removebg_16: -1008340793
+      Neo_Geo_NGCD_-_Metal_Slug_-_Mission_5-removebg_17: -1636588805
+      Neo_Geo_NGCD_-_Metal_Slug_-_Mission_5-removebg_18: 547458951
+      Neo_Geo_NGCD_-_Metal_Slug_-_Mission_5-removebg_19: 1290114539
+      Neo_Geo_NGCD_-_Metal_Slug_-_Mission_5-removebg_2: -347979173
+      Neo_Geo_NGCD_-_Metal_Slug_-_Mission_5-removebg_3: 1315567263
+      Neo_Geo_NGCD_-_Metal_Slug_-_Mission_5-removebg_4: 613771157
+      Neo_Geo_NGCD_-_Metal_Slug_-_Mission_5-removebg_5: 943026655
+      Neo_Geo_NGCD_-_Metal_Slug_-_Mission_5-removebg_6: -1618535973
+      Neo_Geo_NGCD_-_Metal_Slug_-_Mission_5-removebg_7: 1569232425
+      Neo_Geo_NGCD_-_Metal_Slug_-_Mission_5-removebg_8: -2128947789
+      Neo_Geo_NGCD_-_Metal_Slug_-_Mission_5-removebg_9: 1935438957
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
