@@ -101,7 +101,7 @@ public class CameraManager : MonoBehaviour
     //}
 
     #region Mission 1 Switches
-    public static void AfterCrabTower()
+    public static void TestSwitch()
     {
         //If there is no current Camera Manager, exit
         if (current == null)
@@ -109,86 +109,9 @@ public class CameraManager : MonoBehaviour
 
         current.SwitchZ1AtoZ1B();
     }
-
-    public static void AfterSunkBoat()
-    {
-        //If there is no current Camera Manager, exit
-        if (current == null)
-            return;
-
-        current.SwitchZ1BtoZ1C();
-    }
-
-    public static void AfterBossSpawn()
-    {
-        //If there is no current Camera Manager, exit
-        if (current == null)
-            return;
-
-        current.SwitchZ2CtoZ3A();
-    }
-
-    public static void AfterSunkCartel()
-    {
-        //If there is no current Camera Manager, exit
-        if (current == null)
-            return;
-
-        current.SwitchZ1CtoZ1D();
-    }
-
-    public static void AfterMosquitos()
-    {
-        //If there is no current Camera Manager, exit
-        if (current == null)
-            return;
-
-        current.SwitchZ1DtoZ1E();
-    }
-
-    public static void AfterMarcoBoatCartel()
-    {
-        //If there is no current Camera Manager, exit
-        if (current == null)
-            return;
-
-        current.SwitchZ1EtoZ2A();
-    }
-
-    public static void AfterFirstVan()
-    {
-        //If there is no current Camera Manager, exit
-        if (current == null)
-            return;
-
-        current.SwitchZ2AtoZ2B();
-    }
-
-    public static void AfterSecondVan()
-    {
-        //If there is no current Camera Manager, exit
-        if (current == null)
-            return;
-
-        current.SwitchZ2BtoZ2C();
-    }
     #endregion
 
 
-    #region Mission 2 Switches
-    public static void AfterFirstHeli()
-    {
-        if (current == null)
-            return;
-        current.SwitchZ1EtoZ2A();
-    }
-    public static void AfterSecondHeli()
-    {
-        if (current == null)
-            return;
-        current.SwitchZ2DtoZ2E();
-    }
-    #endregion
 
 
 

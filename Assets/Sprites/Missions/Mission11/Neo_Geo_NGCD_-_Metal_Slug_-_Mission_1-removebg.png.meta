@@ -69,10 +69,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -1029,10 +1029,10 @@ TextureImporter:
       name: Neo_Geo_NGCD_-_Metal_Slug_-_Mission_1-removebg_44
       rect:
         serializedVersion: 2
-        x: 1657
-        y: 162
-        width: 256
-        height: 250
+        x: 1663
+        y: 169
+        width: 242
+        height: 235
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
