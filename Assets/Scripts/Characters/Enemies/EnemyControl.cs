@@ -116,8 +116,6 @@ public class EnemyControl : MonoBehaviour
                         if (Mathf.Abs(GetComponent<SpriteRenderer>().bounds.SqrDistance(followPlayer.transform.position)) <= meleeDistance)
                         {
                             followPlayer.GetComponent<Health>().Hit(attackDamage);
-                            if (meleeAttackClip)
-                                AudioManager.PlayEnemyAttackAudio(meleeAttackClip);
                         }
 
                         nextFire = nextFire - shotTime;
@@ -157,10 +155,6 @@ public class EnemyControl : MonoBehaviour
                         {
                             rb.MovePosition(rb.position + new Vector2(CHANGE_SIGN * Mathf.Sign(playerDistance) * speed, rb.position.y) * Time.deltaTime);
                         }
-                        /*else
-                        {
-                            rb.MovePosition(rb.position + new Vector2(CHANGE_SIGN * Mathf.Sign(playerDistance) * speed, rb.position.y - 0.1f) * Time.deltaTime);
-                        }*/
 
                         animator.SetBool("isWalking", true);
                         animator.SetBool("isAttacking", false);
@@ -241,41 +235,19 @@ public class EnemyControl : MonoBehaviour
 
     private void PlayDeathAudio()
     {
-        if (deathClip)
-            AudioManager.PlayEnemyDeathAudio(deathClip);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.CompareTag("Walkable") || collision.collider.CompareTag("Marco Boat") || collision.collider.CompareTag("Water Dead"))
+        if (collision.collider.CompareTag("Walkable"))
         {
             collidingDown = true;
         }
-
-        if (GameManager.IsPlayer(collision))
-        {
-            switch(Random.Range(0, 1))
-            {
-                case 0:
-                    gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(1f, 2f), ForceMode2D.Impulse);
-                    break;
-                case 1:
-                    gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-1f, 2f), ForceMode2D.Impulse);
-                    break;
-            }
-           
-        }
-
-        else if (collision.collider.CompareTag("Water Dead"))
-        {
-            health.Hit(health.GetHealth());
-        }
-
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.collider.CompareTag("Walkable") || collision.collider.CompareTag("Marco Boat"))
+        if (collision.collider.CompareTag("Walkable"))
         {
             collidingDown = false;
         }
@@ -284,8 +256,6 @@ public class EnemyControl : MonoBehaviour
     private IEnumerator WaitSecondaryAttack()
     {
         yield return new WaitForSeconds(0.1f);
-        if (rangeAttackClip)
-            AudioManager.PlayEnemyAttackAudio(rangeAttackClip);
         Instantiate(throwableObj, projSpawner.transform.position, projSpawner.transform.rotation);
         yield return new WaitForSeconds(0.15f);
     }

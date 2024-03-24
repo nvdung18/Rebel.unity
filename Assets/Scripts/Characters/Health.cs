@@ -8,7 +8,7 @@ public class Health : MonoBehaviour
     public float health;
     public bool immortal;
     private bool isPlayer;
-
+    /*Delegate is a special data type in C# used to declare references to functions or methods*/
     public delegate void OnDamageEvent(float damage);
     public OnDamageEvent onHit;
     public OnDamageEvent onDead;
@@ -48,7 +48,6 @@ public class Health : MonoBehaviour
         health += maxHealth * 0.2f;
         if (health > maxHealth)
             health = maxHealth;
-        /*UIManager.UpdateHealthUI(health, maxHealth);*/
     }
 
     public void Hit(float damage)

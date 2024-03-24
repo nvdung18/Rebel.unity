@@ -1,0 +1,1865 @@
+fileFormatVersion: 2
+guid: 5ab8ff6284a4c6d47b9043ef5ab15515
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bazoka_soldier_idle_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1324
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1202d437d342afd4789ce86a024050e1
+      internalID: 982346955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_idle_2
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 1324
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7847d3594c7a3f142bc98e3755a162fc
+      internalID: -1631296136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_idle_3
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1325
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c5c691eae1960848a8306a50b997be0
+      internalID: -47056974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_idle_4
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 1325
+        width: 37
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 130102f571a3eba429724164360c98a4
+      internalID: -1887871533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_idle_5
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 1325
+        width: 39
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 390a96fd776f92b46baef929bc255f57
+      internalID: -580002187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_idle_6
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 1325
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aee6f027b761d694f94086e7e9f861f2
+      internalID: 41884300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_run_1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1278
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28125e5e961a3414a95481da10d65dea
+      internalID: 71239784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_run_2
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 1279
+        width: 43
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a43ba98f6d657042a850854fb5027bd
+      internalID: 426156294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_run_3
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 1279
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf0278c32683f134599ef0c645102419
+      internalID: 86415539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_run_4
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 1280
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64f147f67200907499a67e7957a93f21
+      internalID: 2115652201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_run_5
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 1279
+        width: 41
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1916bdeeb650df84da6e59ccbf1d64f5
+      internalID: 865887756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_run_6
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 1278
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07db4f2106d6ed341b9d3a0340383ad0
+      internalID: -1967048663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_run_7
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1278
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f39600461fcb344950590db8479654
+      internalID: -1294230652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_run_8
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 1277
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44c7191359496024b88256fa33633299
+      internalID: 1281064221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_run_9
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 1280
+        width: 38
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f0257efb833a034ca953bd35754e233
+      internalID: 1321965622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_run_10
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 1280
+        width: 37
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0608d6b51a42d81458e900f63d5a908d
+      internalID: -174877573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_run_11
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 1279
+        width: 38
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6da8151dd8f28b4a9191e09a65655ee
+      internalID: -1102814682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_run_12
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1232
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7919933bd707ae44b52843f80a8dfa7
+      internalID: -2115360357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_run_13
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 1231
+        width: 41
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 262747ed7c1884f42b0b52848cf15206
+      internalID: 2033706855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_run_14
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 1231
+        width: 39
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d5ef6d0821a5e44d934e88a7210390c
+      internalID: -1953054688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_run_15
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1230
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2bba8e1def819545bc6d5b4f5cad528
+      internalID: -498561439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_run_16
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 1230
+        width: 37
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 535ad855c7a3186429fcbf598c7c1628
+      internalID: -1545171977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_stop_1
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1181
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60d49f9e741d5004b94503193a28d764
+      internalID: -562452427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_stop_2
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1180
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f81241e6317a8c40b125a987355e419
+      internalID: -193673775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_stop_3
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1180
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df0bfafc33daa94e83eb7c501bd67c7
+      internalID: 1969031066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_stop_4
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 1180
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d34c887767bc0d48b662010a7e97bff
+      internalID: -2055540599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_stop_5
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 1180
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b0ca730146287547b5820b56fe99679
+      internalID: -2026960119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_stop_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1180
+        width: 37
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e504449c1fe9c404ca7c0aced63a0002
+      internalID: 1842797142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_fire_1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1087
+        width: 41
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4517d900c405ec4478e928bac5733170
+      internalID: 1402231039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_fire_3
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 1088
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 726a6bbed4b580745a3620b50f9cbfaa
+      internalID: -371046097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_fire_2
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 1087
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 899f103e79ec7b548b66b45f639e3906
+      internalID: -1875657687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_bullet
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 557
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a9d0652f2826cc43beaa99142dc3f26
+      internalID: -1199452396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_explosive_1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 574
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6df6164ab9741842a644519b13c1f21
+      internalID: -1483498976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_explosive_2
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 576
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd4dbdd99a608d54d9096d788aae9a5a
+      internalID: -1451671093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_explosive_3
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 577
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b726ef4787dc1246addf23d1e3f5e4b
+      internalID: -1781348980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_explosive_4
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 577
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b672fc1e645104d8c6ee876f40b4af
+      internalID: -448849385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_explosive_5
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 576
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7de531007bfb54546bf9db206c3626bc
+      internalID: -855292140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_explosive_6
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 576
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 463aaba91a44892409dd6e5ad84e256c
+      internalID: -967690592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_explosive_7
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 576
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84012b16c87b32a459ac11498e922dc7
+      internalID: 838245413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_drop_weapon_1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 524
+        width: 42
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe07279f64c0efb4996bad225edf6c41
+      internalID: 393977277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_drop_weapon_2
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 524
+        width: 41
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b850c1258856a914e8f2f7d015143fbd
+      internalID: -946856320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_drop_weapon_3
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 521
+        width: 39
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb521b01b0e309145b9341375233b307
+      internalID: -759315400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_drop_weapon_4
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 518
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55ce18068d549694cbec6c496b3359d0
+      internalID: -1692902013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_drop_weapon_5
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 515
+        width: 28
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8e9011a2dd7a2f4786ce23146925639
+      internalID: -868336964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_drop_weapon_6
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 515
+        width: 22
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 565c1a75d3041024bbbd9179d34b0379
+      internalID: -1545799722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_drop_weapon_7
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 514
+        width: 16
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ddba1326e56b9b4daddd520112cfca6
+      internalID: 1575252005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_drop_weapon_8
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 514
+        width: 19
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fd03e12789f0644b970f674a44e8404
+      internalID: -410299008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_drop_weapon_9
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 516
+        width: 27
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dabe1d87378e004cbf08f2316d8e826
+      internalID: -1843445493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_drop_weapon_10
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 517
+        width: 33
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5a0c751816814743bd0aedaa0396406
+      internalID: -538108677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka soldier 1_49
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 276
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 480c49eafc49e7e4d89faed6191c5b7c
+      internalID: 1205817627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_drop_weapon_11
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 521
+        width: 39
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8a7a079c70f8904693b949f00d248b4
+      internalID: -239084476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka soldier 1_51
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 276
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a35c097b9bb34ce429d84ec228e805dd
+      internalID: 330423355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_drop_weapon_12
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 523
+        width: 40
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80b70db804aea3c45b9e452ed8614909
+      internalID: 1881516436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka soldier 1_53
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 276
+        width: 28
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffa886e994470af49bbd286ea5e7477d
+      internalID: 658451221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka soldier 1_54
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 276
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcc3fb84ae35f3a45bb40cffea41db0e
+      internalID: 339362154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka soldier 1_55
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 276
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 293fc50242db12649be55ce60ef078f6
+      internalID: -2123510941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka soldier 1_56
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 276
+        width: 48
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 401c3b0f2175a454485b8208936ab037
+      internalID: 711583067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka soldier 1_57
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 276
+        width: 41
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ea74263fa16ec04eb649e8af45a057b
+      internalID: -789013780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka soldier 1_58
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 276
+        width: 41
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a0ef0819cd9814eb6264964ac0d210
+      internalID: 104647981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka soldier 1_59
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 276
+        width: 37
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58dfc56654af1dc49abaa467763df127
+      internalID: 2015372318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka soldier 1_60
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 276
+        width: 37
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec40b9bd76d7685448d7353885918dfb
+      internalID: 2116255965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka soldier 1_61
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 276
+        width: 38
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 711c4c937b576ad4fb7f82ee36df828d
+      internalID: 1060625236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_jump_1
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1135
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 057ea4717517b484bb2c48d006afbd69
+      internalID: -543792064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_jump_2
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1134
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83d5eb6d5aa768b4ca54df1921a90ce3
+      internalID: 429677155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_jump_3
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 1135
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e414f5b9356ae9c42a6de9e925f4ecf5
+      internalID: -829310795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_jump_4
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1137
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9523f2b4f3648114cb14afff310d6e70
+      internalID: 1671791333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_jump_5
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 1139
+        width: 42
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfce2f3031cd7be4680c634804c1d37b
+      internalID: 1324033330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_jump_6
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 1139
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbd8629f974fd004c9c9eca2c9c6bf8b
+      internalID: -1004486507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_jump_7
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 1135
+        width: 39
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29402520f6bd5eb4691697bba87e9802
+      internalID: 493913185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_jump_8
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 1134
+        width: 37
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7917b64fb3b3554387118f7e071e380
+      internalID: -1314877143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_explosive_8
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 576
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa75390f9e053e14db678d0737056ca0
+      internalID: -1211482311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_explosive_9
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 575
+        width: 34
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c8fa76b88ccbe64c9a7ddf80b4170cf
+      internalID: 140175136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_explosive_10
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 579
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b008915710a292c459286e3fbe2db47a
+      internalID: -1626274132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_explosive_11
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 578
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca7d69088d0111c41a7bc6f1612ee8f2
+      internalID: 1109673383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_explosive_12
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 579
+        width: 35
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 593c98ac0ab312e4391b91d224ce6900
+      internalID: 1475483476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_explosive_13
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 578
+        width: 36
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26eaf9dfb6cc4934aa6f0bfb085b78c8
+      internalID: -291913205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_explosive_14
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 581
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0925e5715500dbc41bb7ac7718feeb35
+      internalID: -769726671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_explosive_15
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 582
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdb3b06d32f03044cb83507d61e6a70d
+      internalID: -297160602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bazoka_soldier_explosive_16
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 549
+        width: 33
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 575f10c9945054749b2b88891cd1665a
+      internalID: 164291756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      bazoka soldier 1_49: 1205817627
+      bazoka soldier 1_51: 330423355
+      bazoka soldier 1_53: 658451221
+      bazoka soldier 1_54: 339362154
+      bazoka soldier 1_55: -2123510941
+      bazoka soldier 1_56: 711583067
+      bazoka soldier 1_57: -789013780
+      bazoka soldier 1_58: 104647981
+      bazoka soldier 1_59: 2015372318
+      bazoka soldier 1_60: 2116255965
+      bazoka soldier 1_61: 1060625236
+      bazoka_soldier_bullet: -1199452396
+      bazoka_soldier_drop_weapon_1: 393977277
+      bazoka_soldier_drop_weapon_10: -538108677
+      bazoka_soldier_drop_weapon_11: -239084476
+      bazoka_soldier_drop_weapon_12: 1881516436
+      bazoka_soldier_drop_weapon_2: -946856320
+      bazoka_soldier_drop_weapon_3: -759315400
+      bazoka_soldier_drop_weapon_4: -1692902013
+      bazoka_soldier_drop_weapon_5: -868336964
+      bazoka_soldier_drop_weapon_6: -1545799722
+      bazoka_soldier_drop_weapon_7: 1575252005
+      bazoka_soldier_drop_weapon_8: -410299008
+      bazoka_soldier_drop_weapon_9: -1843445493
+      bazoka_soldier_explosive_1: -1483498976
+      bazoka_soldier_explosive_10: -1626274132
+      bazoka_soldier_explosive_11: 1109673383
+      bazoka_soldier_explosive_12: 1475483476
+      bazoka_soldier_explosive_13: -291913205
+      bazoka_soldier_explosive_14: -769726671
+      bazoka_soldier_explosive_15: -297160602
+      bazoka_soldier_explosive_16: 164291756
+      bazoka_soldier_explosive_2: -1451671093
+      bazoka_soldier_explosive_3: -1781348980
+      bazoka_soldier_explosive_4: -448849385
+      bazoka_soldier_explosive_5: -855292140
+      bazoka_soldier_explosive_6: -967690592
+      bazoka_soldier_explosive_7: 838245413
+      bazoka_soldier_explosive_8: -1211482311
+      bazoka_soldier_explosive_9: 140175136
+      bazoka_soldier_fire_1: 1402231039
+      bazoka_soldier_fire_2: -1875657687
+      bazoka_soldier_fire_3: -371046097
+      bazoka_soldier_idle_1: 982346955
+      bazoka_soldier_idle_2: -1631296136
+      bazoka_soldier_idle_3: -47056974
+      bazoka_soldier_idle_4: -1887871533
+      bazoka_soldier_idle_5: -580002187
+      bazoka_soldier_idle_6: 41884300
+      bazoka_soldier_jump_1: -543792064
+      bazoka_soldier_jump_2: 429677155
+      bazoka_soldier_jump_3: -829310795
+      bazoka_soldier_jump_4: 1671791333
+      bazoka_soldier_jump_5: 1324033330
+      bazoka_soldier_jump_6: -1004486507
+      bazoka_soldier_jump_7: 493913185
+      bazoka_soldier_jump_8: -1314877143
+      bazoka_soldier_run_1: 71239784
+      bazoka_soldier_run_10: -174877573
+      bazoka_soldier_run_11: -1102814682
+      bazoka_soldier_run_12: -2115360357
+      bazoka_soldier_run_13: 2033706855
+      bazoka_soldier_run_14: -1953054688
+      bazoka_soldier_run_15: -498561439
+      bazoka_soldier_run_16: -1545171977
+      bazoka_soldier_run_2: 426156294
+      bazoka_soldier_run_3: 86415539
+      bazoka_soldier_run_4: 2115652201
+      bazoka_soldier_run_5: 865887756
+      bazoka_soldier_run_6: -1967048663
+      bazoka_soldier_run_7: -1294230652
+      bazoka_soldier_run_8: 1281064221
+      bazoka_soldier_run_9: 1321965622
+      bazoka_soldier_stop_1: -562452427
+      bazoka_soldier_stop_2: -193673775
+      bazoka_soldier_stop_3: 1969031066
+      bazoka_soldier_stop_4: -2055540599
+      bazoka_soldier_stop_5: -2026960119
+      bazoka_soldier_stop_6: 1842797142
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

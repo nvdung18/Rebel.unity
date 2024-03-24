@@ -9,7 +9,6 @@ public class ThrowableMovement : MonoBehaviour
     private float throwableDamageEnemy = 10f;
     private float throwableDamageBoss = 25f;
     private float throwableDamageHeavybomb = 50f;
-    private float throwableDamageVomit = 25f;
     public float throwableForce = 2.5f;
 
     public enum LauncherType
@@ -25,8 +24,6 @@ public class ThrowableMovement : MonoBehaviour
         BossBomb,
         BossHeavyBomb,
         EnemyGrenade,
-        Vomit,
-        Bubble
     };
     public ThrowableType throwable = ThrowableType.Grenade;
 
@@ -62,12 +59,6 @@ public class ThrowableMovement : MonoBehaviour
             case 180:
                 throwableDirection = Quaternion.AngleAxis(-45, Vector3.forward) * Vector3.left;
                 break;
-            case -90:
-                throwableDirection = Quaternion.AngleAxis(-45, Vector3.forward) * Vector3.left;
-                break;
-            case 90:
-                throwableDirection = Quaternion.AngleAxis(45, Vector3.forward) * Vector3.right;
-                break;
         }
 
         rb.gravityScale = .5f;
@@ -88,7 +79,7 @@ public class ThrowableMovement : MonoBehaviour
         {
             BulletManager.GetGrenadePool()?.Despawn(this.gameObject);
         }
-        else //if (throwable == ThrowableType.BossHeavyBomb || throwable == ThrowableType.BossBomb) //Is an enemy throwable
+        else //Is an enemy throwable
         {
             Destroy(gameObject);
         }
@@ -106,20 +97,13 @@ public class ThrowableMovement : MonoBehaviour
         if (hasHit)
             return;
 
-        if (GameManager.CanTriggerThrowable(collider) && !(launcher == LauncherType.Player && GameManager.IsPlayer(collider)) && !(launcher == LauncherType.Enemy && (collider.CompareTag("Enemy")|| collider.CompareTag("EnemyBomb"))))
+        if (GameManager.CanTriggerThrowable(collider) && !(launcher == LauncherType.Player && GameManager.IsPlayer(collider)) && !(launcher == LauncherType.Enemy && collider.CompareTag("Enemy")))
         {
             hasHit = true;
 
             if (canExplode)
             {
-                if (throwable == ThrowableType.BossHeavyBomb)
-                {
-                    if (collider.CompareTag("Walkable"))
-                    {
-                        GameObject hittenTerrain = collider.gameObject;
-                        StartCoroutine(DestroyHitten(hittenTerrain));
-                    }
-                }
+                
                 StartCoroutine(Explosion(collider));
             }
             else
@@ -132,13 +116,12 @@ public class ThrowableMovement : MonoBehaviour
 
     private IEnumerator Explosion(Collider2D collision)
     {
-        AudioManager.PlayGrenadeHitAudio();
-        throwableAnimator.SetBool("hasHittenSth", true);
+        throwableAnimator.SetBool("hasExploded", true);
 
         ResetMovement(collision);
 
         yield return new WaitForSeconds(1.7f);
-        throwableAnimator.SetBool("hasHittenSth", false);
+        throwableAnimator.SetBool("hasExploded", false);
         Despawn();
     }
 
@@ -163,9 +146,6 @@ public class ThrowableMovement : MonoBehaviour
             case ThrowableType.BossBomb:
                 target.GetComponent<Health>()?.Hit(throwableDamageBoss);
                 break;
-            case ThrowableType.Vomit:
-                target.GetComponent<Health>()?.Hit(throwableDamageVomit);
-                break;
         }
 
         rb.angularVelocity = 0;
@@ -173,13 +153,4 @@ public class ThrowableMovement : MonoBehaviour
         rb.velocity = Vector2.zero;
     }
 
-    private IEnumerator DestroyHitten(GameObject hittenTerrain)
-    {
-        yield return new WaitForSeconds(0.25f);
-        hittenTerrain.GetComponent<Collider2D>().enabled = false;
-        hittenTerrain.GetComponent<Animator>().SetBool("onDestroy", true);
-        yield return new WaitForSeconds(1.2f);
-        hittenTerrain.GetComponent<Animator>().SetBool("onDestroy", false);
-        Destroy(hittenTerrain);
-    }
 }

@@ -60,7 +60,6 @@ public class GameManager : MonoBehaviour
             return;
         //Update the total game time and tell the UI Manager to update
         totalGameTime += Time.deltaTime;
-        Debug.Log(totalGameTime);
         // UIManager.UpdateTimeUI(totalGameTime); // todo implement or delete
     }
 
@@ -89,17 +88,11 @@ public class GameManager : MonoBehaviour
 
     public static void AddScore(float amount)
     {
-        AddScore((int)amount);
-    }
-
-    public static void AddScore(int amount)
-    {
         //If there is no current Game Manager, exit
         if (current == null)
             return;
 
-        current.score += amount;
-        /*UIManager.UpdateScoreUI();*/
+        current.score += (int)amount;
     }
 
     public static int GetScore()
@@ -129,39 +122,6 @@ public class GameManager : MonoBehaviour
             return;
 
         current.bombs--;
-        /*UIManager.UpdateBombsUI();*/
-    }
-
-    public static int GetHeavyMachineAmmo()
-    {
-        //If there is no current Game Manager, return 0
-        if (current == null)
-            return 100;
-
-        //Return the state of the game
-        return current.heavyMachineAmmo;
-    }
-
-    public static void SetHeavyMachineAmmo(int ammo)
-    {
-        //If there is no current Game Manager, return 0
-        if (current == null)
-            return;
-
-        //Return the state of the game
-        current.heavyMachineAmmo = ammo;
-    }
-
-    public static void RemoveHeavyMachineAmmo()
-    {
-        //If there is no current Game Manager, exit
-        if (current == null)
-            return;
-
-        current.heavyMachineAmmo -= 3;
-        if (current.heavyMachineAmmo < 0)
-            current.heavyMachineAmmo = 0;
-        /*UIManager.UpdateAmmoUI();*/
     }
 
     public static void AddAmmo()
@@ -173,8 +133,6 @@ public class GameManager : MonoBehaviour
         current.bombs += 10;
         //current.heavyMachineAmmo += 120;
 
-        /*UIManager.UpdateBombsUI();*/
-        //UIManager.UpdateAmmoUI();
     }
 
     public static void SetBombs(int bombs = 10)
@@ -183,17 +141,6 @@ public class GameManager : MonoBehaviour
             return;
         current.bombs = bombs;
         /*UIManager.UpdateBombsUI();*/
-    }
-
-    public static void RechargAmmoMG()
-    {
-        //If there is no current Game Manager, exit
-        if (current == null)
-            return;
-
-        current.heavyMachineAmmo += 120;
-
-        /*UIManager.UpdateAmmoUI();*/
     }
 
     public static bool IsGameOver()
@@ -214,13 +161,6 @@ public class GameManager : MonoBehaviour
 
         //The game is now over
         current.isGameOver = true;
-
-        //Tell UI Manager to show the game over text and tell the Audio Manager to play
-        //game over audio
-       /* UIManager.DisplayGameOverText();*/
-        AudioManager.PlayGameOverAudio();
-
-        current.StartCoroutine(current.WaitHome());
     }
 
 
@@ -261,15 +201,6 @@ public class GameManager : MonoBehaviour
         return GetPlayer(collision.collider);
     }
 
-    public static GameObject GetRunningTarget() // not cached
-    {
-        //If there is no current Game Manager, exit
-        if (current == null)
-            return null;
-
-        return GameObject.FindGameObjectWithTag("RunningTarget");
-    }
-
     public static bool IsPlayer(GameObject player)
     {
         //return (GetPlayerLayer() & (1<<player.layer)) != 0;
@@ -305,14 +236,6 @@ public class GameManager : MonoBehaviour
         if (current == null)
             return LayerMask.NameToLayer("Player");
         return current.playerLayer.value;
-    }
-
-    public static LayerMask GetDestructibleLayer()
-    {
-        if (current == null)
-            return 0;
-
-        return GetEnemyLayer() + GetBuildingLayer();
     }
 
     public static bool CanTriggerThrowable(Collider2D collider)
@@ -359,48 +282,6 @@ public class GameManager : MonoBehaviour
         return current.sfxAudio;
     }
 
-    public static void SetMission1Points(float points)
-    {
-        if (current == null)
-            return;
-        current.mission1Points = points;
-    }
-
-    public static float GetMission1Points()
-    {
-        if (current == null)
-            return 0f;
-        return current.mission1Points;
-    }
-
-    public static void SetMission2Points(float points)
-    {
-        if (current == null)
-            return;
-        current.mission2Points = points;
-    }
-
-    public static float GetMission2Points()
-    {
-        if (current == null)
-            return 0f;
-        return current.mission2Points;
-    }
-
-    public static void SetMission3Points(float points)
-    {
-        if (current == null)
-            return;
-        current.mission3Points = points;
-    }
-
-    public static float GetMission3Points()
-    {
-        if (current == null)
-            return 0f;
-        return current.mission3Points;
-    }
-
     public static void GameReset()
     {
         if (!current)
@@ -414,24 +295,6 @@ public class GameManager : MonoBehaviour
         
     }
 
-    public static void PauseExit()
-    {
-        if (!current)
-            return;
-        LoadHome();
-    }
-
-    public static void LoadHome()
-    {
-        LoadScene((int)Missions.Home);
-    }
-
-    public static void LoadNextMission()
-    {
-        // currentMission is updated in the PlayerWin method
-        LoadScene((int)current.currentMission);
-    }
-
     public static bool CanTriggerEnemyBombs(string tag)
     {
         //If there is no current Game Manager, exit
@@ -441,22 +304,4 @@ public class GameManager : MonoBehaviour
         return tag == "Player" || tag == "Walkable" || tag == "Marco Boat" || tag == "Bridge";
     }
 
-    private IEnumerator WaitHome()
-    {
-        yield return new WaitForSeconds(7f);
-        LoadHome();
-    }
-
-    private IEnumerator WaitNextMission()
-    {
-        yield return new WaitForSeconds(7f);
-        LoadNextMission();
-    }
-
-    public static void LoadScene(int id, bool skipReset = false)
-    {
-        if (!skipReset)
-            GameReset();
-        SceneManager.LoadScene(id);
-    }
 }

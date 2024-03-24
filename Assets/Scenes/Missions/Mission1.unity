@@ -140,7 +140,7 @@ PrefabInstance:
     - target: {fileID: 1622775180087630575, guid: b65003e34ff0093489a5091111ee8cf7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.5655155
+      value: 9.69
       objectReference: {fileID: 0}
     - target: {fileID: 1622775180087630575, guid: b65003e34ff0093489a5091111ee8cf7,
         type: 3}
@@ -1861,7 +1861,7 @@ PrefabInstance:
     - target: {fileID: 1866510317437440665, guid: e6ecc3aab9e52aa4791973b906dda33f,
         type: 3}
       propertyPath: m_ScreenX
-      value: 0.07000001
+      value: 0.13
       objectReference: {fileID: 0}
     - target: {fileID: 1866510319001186920, guid: e6ecc3aab9e52aa4791973b906dda33f,
         type: 3}
@@ -1871,7 +1871,7 @@ PrefabInstance:
     - target: {fileID: 1866510319001186920, guid: e6ecc3aab9e52aa4791973b906dda33f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.45310068
+      value: 0.49680853
       objectReference: {fileID: 0}
     - target: {fileID: 1866510319001186920, guid: e6ecc3aab9e52aa4791973b906dda33f,
         type: 3}
@@ -1923,6 +1923,11 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 1130255035}
+    - target: {fileID: 1866510319001186921, guid: e6ecc3aab9e52aa4791973b906dda33f,
+        type: 3}
+      propertyPath: m_Lens.OrthographicSize
+      value: 1.1
+      objectReference: {fileID: 0}
     - target: {fileID: 1866510319001186926, guid: e6ecc3aab9e52aa4791973b906dda33f,
         type: 3}
       propertyPath: m_BoundingVolume
@@ -2360,6 +2365,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1765443406479915045, guid: 10d84f9cfeae4f54d9078ef51e03d394,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1765443406479915049, guid: 10d84f9cfeae4f54d9078ef51e03d394,
         type: 3}
       propertyPath: m_RootOrder
@@ -2425,8 +2435,24 @@ PrefabInstance:
       propertyPath: foreground
       value: 
       objectReference: {fileID: 1062245212}
+    - target: {fileID: 1765443406479915055, guid: 10d84f9cfeae4f54d9078ef51e03d394,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.395877
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765443406479915055, guid: 10d84f9cfeae4f54d9078ef51e03d394,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.047938526
+      objectReference: {fileID: 0}
+    - target: {fileID: 8163072815345999352, guid: 10d84f9cfeae4f54d9078ef51e03d394,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1765443407276444477, guid: 10d84f9cfeae4f54d9078ef51e03d394, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10d84f9cfeae4f54d9078ef51e03d394, type: 3}
@@ -2529,7 +2555,7 @@ PrefabInstance:
     - target: {fileID: 2431320818782163684, guid: b7f8e7b35f7be624e80727a89ad67fae,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.205
       objectReference: {fileID: 0}
     - target: {fileID: 2431320818782163684, guid: b7f8e7b35f7be624e80727a89ad67fae,
         type: 3}
@@ -2619,7 +2645,7 @@ PrefabInstance:
     - target: {fileID: 2431320819883578219, guid: b7f8e7b35f7be624e80727a89ad67fae,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.84310055
+      value: 0.8868084
       objectReference: {fileID: 0}
     - target: {fileID: 2431320819883578219, guid: b7f8e7b35f7be624e80727a89ad67fae,
         type: 3}
@@ -2629,12 +2655,17 @@ PrefabInstance:
     - target: {fileID: 2431320819883578219, guid: b7f8e7b35f7be624e80727a89ad67fae,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.5
+      value: -0.705
       objectReference: {fileID: 0}
     - target: {fileID: 2431320819883578260, guid: b7f8e7b35f7be624e80727a89ad67fae,
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2431320819883578260, guid: b7f8e7b35f7be624e80727a89ad67fae,
+        type: 3}
+      propertyPath: orthographic size
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 2431320819883578261, guid: b7f8e7b35f7be624e80727a89ad67fae,
         type: 3}

@@ -46,54 +46,18 @@ public class PlayerController : MonoBehaviour
     public GameObject granadeSpawner;
     public GameObject granate;
 
-    [Header("Pistol")]
-    public AnimatorOverrideController pistolAnimator;
-    public AnimatorOverrideController bottomPistolAnimator;
-
-    [Header("Heavy Machine Gun")]
-    public AnimatorOverrideController machineGunAnimator;
-    public AnimatorOverrideController bottomMachineGunAnimator;
-    private bool haveMachineGun = false;
-
-    [Header("Melee")]
-    public float meleeDistance = 0.4f;
-    public float damageMelee = 200f;
-
-    private Health health;
-    private bool asObjUp = false;
-
     public GameObject foreground;
     Cinemachine.CinemachineBrain cinemachineBrain;
-
-    public enum CollectibleType
-    {
-        HeavyMachineGun,
-        Ammo,
-        MedKit,
-    };
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         bottomAnimator = bottom.GetComponent<Animator>();
         cinemachineBrain = Camera.main.GetComponent<Cinemachine.CinemachineBrain>();
-        /*registerHealth();*/
     }
-
-    /*private void registerHealth()
-    {
-        health = GetComponent<Health>();
-        // register health delegate
-        health.onDead += OnDead;
-        health.onHit += OnHit;
-    }*/
 
     void Update()
     {
-        //Block the player from moving if it's death
-        /*if (GameManager.IsGameOver() || !health.IsAlive())
-            return;*/
-
         Fire();
         ThrowGranate();
         MoveHorizontally();
@@ -104,25 +68,6 @@ public class PlayerController : MonoBehaviour
         FlipShoot();
     }
 
-    /*private void OnDead(float damage) // health delegate onDead
-    {
-        Died();
-        GameManager.PlayerDied();
-        AudioManager.PlayDeathAudio();
-    }
-
-    private void OnHit(float damage) // health delegate onHit
-    {
-        UIManager.UpdateHealthUI(health.GetHealth(), health.GetMaxHealth());
-        AudioManager.PlayMeleeTakeAudio();
-    }*/
-
-    /*void Died()
-    {
-        bottomAnimator.SetBool("isDying", true);
-        StartCoroutine(WaitCrouch());
-    }*/
-
     void Fire()
     {
         shotTime = shotTime + Time.deltaTime;
@@ -131,8 +76,6 @@ public class PlayerController : MonoBehaviour
         {
             if (!wasFiring)
             {
-               
-                
                     topAnimator.SetBool("isFiring", true);
                     bottomAnimator.SetBool("isFiring", true);
 
@@ -150,17 +93,12 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-
-                bottomAnimator.SetBool("isMeleeRange", false);
-                topAnimator.SetBool("isMeleeRange",false);
                 topAnimator.SetBool("isFiring", false);
                 bottomAnimator.SetBool("isFiring", false);
             }
         }
         else
         {
-            bottomAnimator.SetBool("isMeleeRange", false);
-            topAnimator.SetBool("isMeleeRange", false);
             topAnimator.SetBool("isFiring", false);
             bottomAnimator.SetBool("isFiring", false);
             wasFiring = false;
@@ -237,26 +175,9 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    /*bool IsOutsideScreen(float moveH)
-    {
-        //Return a value between [0;1] - 0.5 if the player is in the mid of the camera
-        var playerVPPos = Camera.main.WorldToViewportPoint(transform.position);
-
-        //Prevent walking back when camera is blending
-        if (moveH < -Mathf.Epsilon && cinemachineBrain.IsBlending)
-            return true;
-
-        //Control if the camera is out of the sprite map
-        if ((playerVPPos.x < 0.03f || playerVPPos.x > 1 - 0.03f))
-            return true;
-        return false;
-    }*/
-
     void MoveHorizontally()
     {
         float moveH = Input.GetAxis("Horizontal");
-        /*if (IsOutsideScreen(moveH))
-            return;*/
 
         if (moveH != 0 && !(bottomAnimator.GetBool("isCrouched") && topAnimator.GetBool("isFiring")))
         {
@@ -288,7 +209,6 @@ public class PlayerController : MonoBehaviour
         float moveV = Input.GetAxis("Vertical");
         if (moveV != 0)
         {
-            //Yes
 
             //bottomAnimator.SetBool("isWalking", true);
 
@@ -297,10 +217,6 @@ public class PlayerController : MonoBehaviour
             {
                 //Moving UP
                 topAnimator.SetBool("isLookingUp", true);
-            }
-            else if (moveV < 0)
-            {
-                //Moving down
             }
         }
         else
@@ -322,7 +238,7 @@ public class PlayerController : MonoBehaviour
         {
             if (jumpTime > nextJump)
             {
-                rb.AddForce(new Vector3(0, maxJump, 0), ForceMode2D.Impulse);
+                rb.AddForce(new Vector2(0, maxJump), ForceMode2D.Impulse);
                 topAnimator.SetBool("isJumping", true);
                 bottomAnimator.SetBool("isJumping", true);
                 isGrounded = false;
@@ -337,32 +253,10 @@ public class PlayerController : MonoBehaviour
     void Crouch()
     {
         crouchTime = crouchTime + Time.deltaTime;
-        if (Input.GetButton("Crouch") && Input.GetButton("Jump") && isGrounded)
-        {
-            isGrounded = false;
-            if (crouchTime > nextCrouch)
-            {
-                topAnimator.SetBool("isCrouched", true);
-                topAnimator.SetBool("isJumping", true);
-                bottomAnimator.SetBool("isJumping", true);
-
-                if (!wasCrounching)
-                {
-                    maxSpeed -= 0.4f;
-                    projSpawner.transform.position = new Vector3(projSpawner.transform.position.x, projSpawner.transform.position.y - 0.14f, 0);
-                }
-
-                nextCrouch = crouchTime + crouchDelta;
-                nextCrouch = nextCrouch - crouchTime;
-                crouchTime = 0.0f;
-                wasCrounching = true;
-            }
-        }
-        else if (Input.GetButton("Crouch") && !Input.GetButton("Jump") && (!(bottomAnimator.GetBool("isWalking") && !wasCrounching) || !bottomAnimator.GetBool("isWalking")) && isGrounded)
+        if (Input.GetButton("Crouch") && !Input.GetButton("Jump") && (!(bottomAnimator.GetBool("isWalking") && !wasCrounching) || !bottomAnimator.GetBool("isWalking")) && isGrounded)
         {
             if (crouchTime > nextCrouch)
             {
-                topAnimator.SetBool("isCrouched", true);
                 bottomAnimator.SetBool("isCrouched", true);
 
                 gameObject.GetComponent<BoxCollider2D>().enabled = false;
@@ -387,9 +281,8 @@ public class PlayerController : MonoBehaviour
         } 
         else
         {
-            if (!asObjUp && isGrounded)
+            if (isGrounded)
             {
-                topAnimator.SetBool("isCrouched", false);
                 bottomAnimator.SetBool("isCrouched", false);
 
                 gameObject.GetComponent<BoxCollider2D>().enabled = true;
@@ -418,7 +311,6 @@ public class PlayerController : MonoBehaviour
         scale.x *= -1;
         transform.localScale = scale;
 
-        //transform.localEulerAngles = transform.eulerAngles + new Vector3(0, 180, -2 * transform.eulerAngles.z);
         facingRight = !facingRight;
     }
 
@@ -428,16 +320,6 @@ public class PlayerController : MonoBehaviour
         {
             //Fire up
             projSpawner.transform.rotation = Quaternion.Euler(0, 0, 90);
-        }
-        else if (topAnimator.GetBool("isCrouched") && topAnimator.GetBool("isJumping") && facingRight && !isGrounded)
-        {
-            //Fire down
-            projSpawner.transform.rotation = Quaternion.Euler(0, 0, -90);
-        }
-        else if (topAnimator.GetBool("isCrouched") && topAnimator.GetBool("isJumping") && !facingRight && !isGrounded)
-        {
-            //Fire down
-            projSpawner.transform.rotation = Quaternion.Euler(0, 0, -90);
         }
         else if (facingRight)
         {
@@ -492,22 +374,7 @@ public class PlayerController : MonoBehaviour
     private IEnumerator WaitFire()
     {
         yield return new WaitForSeconds(0.1f); //Gives the animation time to make the first frame
-        if (haveMachineGun)
-        {
-            AudioManager.PlayHeavyMachineShotAudio();
-            BulletManager.GetNormalBulletPool().Spawn(projSpawner.transform.position, projSpawner.transform.rotation);
-            yield return new WaitForSeconds(0.05f);
-            BulletManager.GetNormalBulletPool().Spawn(projSpawner.transform.position, projSpawner.transform.rotation);
-            yield return new WaitForSeconds(0.05f);
-            BulletManager.GetNormalBulletPool().Spawn(projSpawner.transform.position, projSpawner.transform.rotation);
-            GameManager.RemoveHeavyMachineAmmo();
-        }
-        else
-        {
-            AudioManager.PlayNormalShotAudio();
-            BulletManager.GetNormalBulletPool().Spawn(projSpawner.transform.position, projSpawner.transform.rotation);
-        }
-        
+        BulletManager.GetNormalBulletPool().Spawn(projSpawner.transform.position, projSpawner.transform.rotation);
         yield return new WaitForSeconds(0.2f); //Prevents the button from being spammed
     }
 
