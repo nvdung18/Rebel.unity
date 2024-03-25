@@ -112,11 +112,7 @@ public class EnemyControl : MonoBehaviour
                     {
                         nextFire = shotTime + fireDelta;
 
-                        // check also the correct height
-                        if (Mathf.Abs(GetComponent<SpriteRenderer>().bounds.SqrDistance(followPlayer.transform.position)) <= meleeDistance)
-                        {
-                            followPlayer.GetComponent<Health>().Hit(attackDamage);
-                        }
+                        /*followPlayer.GetComponent<Health>().Hit(attackDamage);*/
 
                         nextFire = nextFire - shotTime;
                         shotTime = 0.0f;
@@ -217,7 +213,6 @@ public class EnemyControl : MonoBehaviour
 
     private IEnumerator Die()
     {
-        PlayDeathAudio();
         animator.SetBool("isDying", true);
         if (rb)
             rb.isKinematic = true;
@@ -233,9 +228,6 @@ public class EnemyControl : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void PlayDeathAudio()
-    {
-    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {

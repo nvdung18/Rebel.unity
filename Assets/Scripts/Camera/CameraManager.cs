@@ -106,7 +106,7 @@ public class CameraManager : MonoBehaviour
         //If there is no current Camera Manager, exit
         if (current == null)
             return;
-
+        Debug.Log(1);
         current.SwitchZ1AtoZ1B();
     }
     #endregion

@@ -19,15 +19,8 @@ public class GameManager : MonoBehaviour
     Difficulty difficulty = Difficulty.Medium;
     float bgmAudio = 1f;
     float sfxAudio = 1f;
-    Missions currentMission = Missions.Home;
-    float mission1Points = 0f;
-    float mission2Points = 0f;
-    float mission3Points = 0f;
 
     [Header("Layers")]
-    public LayerMask enemyLayer;
-    public LayerMask buildingLayer;
-    public LayerMask walkableLayer;
     public LayerMask playerLayer;
 
     void Awake()
@@ -58,32 +51,8 @@ public class GameManager : MonoBehaviour
         //If the game is over, exit
         if (isGameOver)
             return;
-        //Update the total game time and tell the UI Manager to update
+        //Update the total game time
         totalGameTime += Time.deltaTime;
-        // UIManager.UpdateTimeUI(totalGameTime); // todo implement or delete
-    }
-
-  
-
-    public static bool ToggleGodMode()
-    {
-        var player = GetPlayer();
-        if (player)
-        {
-            var health = player.GetComponent<Health>();
-            health.immortal = !health.immortal;
-            if (health.immortal)
-            {
-                SetBombs(200);
-                return true;
-            }
-            else
-            {
-                SetBombs();
-                return false;
-            }
-        }
-        return false;
     }
 
     public static void AddScore(float amount)
@@ -140,7 +109,6 @@ public class GameManager : MonoBehaviour
         if (current == null)
             return;
         current.bombs = bombs;
-        /*UIManager.UpdateBombsUI();*/
     }
 
     public static bool IsGameOver()
@@ -163,16 +131,6 @@ public class GameManager : MonoBehaviour
         current.isGameOver = true;
     }
 
-
-    public static LayerMask GetBuildingLayer()
-    {
-        //If there is no current Game Manager, exit
-        if (current == null)
-            return 0;
-
-        return current.buildingLayer;
-    }
-
     public static GameObject GetPlayer() 
     {
         if (current == null)
@@ -186,9 +144,7 @@ public class GameManager : MonoBehaviour
             return null;
         if (player.GetComponent<PlayerController>()) // return itself
             return player;
-        else if (player.transform.parent.gameObject.GetComponent<PlayerController>()) // return parent
-            return player.transform.parent.gameObject;
-        return GameObject.FindGameObjectWithTag("Player"); // return uncached finded by tag
+        return GameObject.FindGameObjectWithTag("Player");
     }
 
     public static GameObject GetPlayer(Collider2D collider)
@@ -203,7 +159,6 @@ public class GameManager : MonoBehaviour
 
     public static bool IsPlayer(GameObject player)
     {
-        //return (GetPlayerLayer() & (1<<player.layer)) != 0;
         return GetPlayerLayer() == (1<<player.layer);
     }
 
@@ -216,21 +171,6 @@ public class GameManager : MonoBehaviour
     {
         return IsPlayer(collision.collider);
     }
-
-    public static LayerMask GetEnemyLayer()
-    {
-        if (current == null)
-            return LayerMask.NameToLayer("Enemy");
-        return current.enemyLayer;
-    }
-
-    public static LayerMask GetWalkableLayer()
-    {
-        if (current == null)
-            return LayerMask.NameToLayer("Walkable");
-        return current.walkableLayer;
-    }
-
     public static int GetPlayerLayer()
     {
         if (current == null)
@@ -248,14 +188,9 @@ public class GameManager : MonoBehaviour
 
     public void SetDifficultyMode(int difficulty)
     {
-        SetDifficultyMode((Difficulty)difficulty);
-    }
-
-    public static void SetDifficultyMode(Difficulty difficulty)
-    {
         if (current == null)
             return;
-        current.difficulty = difficulty;
+        current.difficulty = (Difficulty)difficulty;
     }
 
     public static Difficulty GetDifficultyMode()
@@ -264,8 +199,6 @@ public class GameManager : MonoBehaviour
             return 0;
         return current.difficulty;
     }
-
-
 
     public static float GetBgmAudio()
     {
@@ -294,14 +227,4 @@ public class GameManager : MonoBehaviour
         current.bombs = current.initialBombs;
         
     }
-
-    public static bool CanTriggerEnemyBombs(string tag)
-    {
-        //If there is no current Game Manager, exit
-        if (current == null)
-            return false;
-
-        return tag == "Player" || tag == "Walkable" || tag == "Marco Boat" || tag == "Bridge";
-    }
-
 }

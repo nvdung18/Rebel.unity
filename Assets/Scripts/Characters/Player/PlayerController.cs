@@ -76,20 +76,20 @@ public class PlayerController : MonoBehaviour
         {
             if (!wasFiring)
             {
-                    topAnimator.SetBool("isFiring", true);
-                    bottomAnimator.SetBool("isFiring", true);
+                topAnimator.SetBool("isFiring", true);
+                bottomAnimator.SetBool("isFiring", true);
 
-                    if (shotTime > nextFire)
-                    {
-                        nextFire = shotTime + fireDelta;
+                if (shotTime > nextFire)
+                {
+                    nextFire = shotTime + fireDelta;
 
-                        StartCoroutine(WaitFire());
+                    StartCoroutine(WaitFire());
 
-                        nextFire = nextFire - shotTime;
-                        shotTime = 0.0f;
-                    }
+                    nextFire = nextFire - shotTime;
+                    shotTime = 0.0f;
+                }
 
-                    wasFiring = true;
+                wasFiring = true;
             }
             else
             {
@@ -228,16 +228,15 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
-
     void Jump()
     {
-
         jumpTime = jumpTime + Time.deltaTime;
-
+        
         if (Input.GetButton("Jump") && isGrounded && !bottomAnimator.GetBool("isCrouched"))
         {
             if (jumpTime > nextJump)
             {
+                Debug.Log(jumpTime);
                 rb.AddForce(new Vector2(0, maxJump), ForceMode2D.Impulse);
                 topAnimator.SetBool("isJumping", true);
                 bottomAnimator.SetBool("isJumping", true);
@@ -253,7 +252,7 @@ public class PlayerController : MonoBehaviour
     void Crouch()
     {
         crouchTime = crouchTime + Time.deltaTime;
-        if (Input.GetButton("Crouch") && !Input.GetButton("Jump") && (!(bottomAnimator.GetBool("isWalking") && !wasCrounching) || !bottomAnimator.GetBool("isWalking")) && isGrounded)
+        if (Input.GetButton("Crouch") && !Input.GetButton("Jump") && ((bottomAnimator.GetBool("isWalking") && wasCrounching) || !bottomAnimator.GetBool("isWalking")) && isGrounded)
         {
             if (crouchTime > nextCrouch)
             {
@@ -278,7 +277,10 @@ public class PlayerController : MonoBehaviour
                 wasCrounching = true;
             }
 
-        } 
+        } else if(Input.GetButton("Crouch") && Input.GetButton("Jump"))
+        {
+
+        }
         else
         {
             if (isGrounded)

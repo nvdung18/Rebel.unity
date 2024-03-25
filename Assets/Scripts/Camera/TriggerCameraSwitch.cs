@@ -5,8 +5,7 @@ using UnityEngine.Events;
 
 public class TriggerCameraSwitch : MonoBehaviour
 {
-    public UnityEvent triggerCamera;
-    // Start is called before the first frame update
+    
     void Start()
     {
         
@@ -17,7 +16,7 @@ public class TriggerCameraSwitch : MonoBehaviour
     {
         if (GameManager.IsPlayer(collider))
         {
-            triggerCamera.Invoke();
+            CameraManager.TestSwitch();
             Destroy(gameObject);
         }
     }
